@@ -115,7 +115,7 @@ body {
 .images {
     object-fit: cover;
     float: left;
-    margin: 35px;
+    margin: 20px;
     align-self: center;
     width: 200px;
 }
