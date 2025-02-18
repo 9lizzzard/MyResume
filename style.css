@@ -192,6 +192,7 @@ p {
 @media (max-width: 992px) {
     #title {
         height: clamp(530px, 100vw, 647px);
+        overflow: hidden;
     }
 
     #title > .name {
@@ -214,11 +215,7 @@ p {
         width: 90%;
     }
 
-    .pink-flower {
-        visibility: hidden;
-    }
-
-    .blue-flower {
+    .pink-flower, .blue-flower {
         visibility: hidden;
     }
 
