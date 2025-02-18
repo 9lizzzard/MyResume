@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    background-color: white;
+    line-height: 2;
+}
+
+.container {
+    margin: 0;
+    padding: 0 15px;
+}
+
+#title {
+    background-color: #F8EAF7;
+    height: 100vh;
+    position: relative;
+}
+
+#title > .name {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#hello {
+    text-align: center;
+    margin: 100px 0;
+}
+
+#work-experience {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.all-experiences {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#get-in-touch {
+    text-align: center;
+    margin: 50px 0 100px 0;
+}
+
+#get-in-touch > p {
+    margin-bottom: 40px;
+}
+
+#footer {
+    padding: 38px 15px 25px 15px;
+    background-color: #F8EAF7;
+    text-align: center;
+}
+
+#footer > p {
+    font-size: 12px;
+    margin-top: 30px;
+    color: #F7B5CA;
+}
+
+.footer-link {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #F7B5CA;
+}
+
+.footer-link:hover {
+    color: #F0A8D0;
+}
+
+.all-footers {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.row {
+    width: 900px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+.top-image {
+    position: absolute;
+    left: 0;
+}
+
+.bottom-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.pink-flower {
+    position: absolute;
+    right: 100px;
+}
+
+.blue-flower {
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+
+.images {
+    object-fit: cover;
+    float: left;
+    margin: 35px;
+    align-self: center;
+    width: 200px;
+}
+
+.name {
+    line-height: 1;
+    text-align: center;
+}
+
+.hello > h3 {
+    font-size: 2rem;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Sacramento", cursive;
+    font-size: 104px;
+    color: #F0A8D0;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #F0A8D0;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #F7B5CA;
+}
+
+p {
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #545454;
+    line-height: 2;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.top-hr {
+    border-style: dotted none none;
+    color: #FCE3ED;
+    width: 5%;
+    border-width: 6px;
+}
+
+.contact-btn {
+  background: #F7B5CA;
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  border-color: #F0A8D0;
+  font-family: Montserrat;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background: #F0A8D0;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    #title {
+        height: clamp(530px, 100vw, 647px);
+    }
+
+    #title > .name {
+        position: absolute;
+        left: 50%;
+    }
+
+    .name > h1 {
+        font-size: 60px;
+    }
+
+    .top-image {
+        width: 90%;
+    }
+
+    .bottom-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+    }
+
+    .pink-flower {
+        visibility: hidden;
+    }
+
+    .blue-flower {
+        visibility: hidden;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .row > img {
+        order: -1;
+        margin-bottom: 0;
+    }
+
+    .all-footers {
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+
+}
